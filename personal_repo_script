@@ -1,0 +1,23 @@
+//script for creating api connections to git for personal repos
+
+USE DATABASE DEV;
+USE SCHEMA SANDBOX_MJ;
+
+//CREATING A SECRET UNDER A SCHEMA 
+CREATE OR REPLACE SECRET MJ_GITHUB_SECRET
+TYPE = PASSWORD
+USERNAME = 'mj0740'
+PASSWORD = 'insert the real password here';
+
+//TESTING IF SECRETS EXIST ANYWHERE IN THE CURRENTLY SELECTED SCHEMA 
+SHOW SECRETS;
+
+//
+create or replace api integration git_api_integration_test
+api_provider = git_https_api
+api_allowed_prefixes = ('https://github.com/mj0740/')
+allowed_authentication_secrets = (MJ_GITHUB_SECRET)
+enabled = true;
+
+//NEXT COPY FROM YOUTUBE
+show api integrations;
