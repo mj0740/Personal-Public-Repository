@@ -1,6 +1,8 @@
 # Personal-Public-Repository
 Persona repository for different projects and developments
 
+First update:
+- League platform: Yahoo first
 
 fantasy-bball-pickups/
 ├── README.md
