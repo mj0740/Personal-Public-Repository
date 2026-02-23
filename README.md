@@ -1,7 +1,5 @@
 # Personal-Public-Repository
 Persona repository for different projects and developments
-First Project - NBA Fantasy Basketball App waiver wire analyzer. Trying to identify optimal players to pick up based on schedule, current stats and player rankings.
-
 
 
 fantasy-bball-pickups/
